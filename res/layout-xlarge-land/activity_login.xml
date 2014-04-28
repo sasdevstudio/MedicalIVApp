@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/bac_color" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+            
+            <TextView
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:gravity="center"
+                 android:text="@string/welcome_text"
+                 android:textColor="@color/black"
+                 android:paddingLeft="60dp"
+                 android:paddingRight="60dp"
+                 android:textSize="55dp" />
+            
+            <TextView
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:gravity="center"
+                 android:layout_marginTop="40dp"
+                 android:textColor="@color/black"
+                 android:paddingLeft="60dp"
+                 android:paddingRight="60dp"
+                 android:text="@string/login_info"
+                 android:textSize="38dp" />
+            
+            <EditText
+                 android:id="@+id/et_email"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_marginTop="45dp"
+                 android:text="1345@gmail.com"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:textSize="38dp" 
+                 android:textColor="@color/black"/>
+            
+            <EditText
+                 android:id="@+id/et_password"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_marginTop="20dp"
+                 android:text="we"
+                 android:textColor="@color/black"
+                 android:inputType="textPassword"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:textSize="38dp" />
+            
+             <Button
+                 android:id="@+id/btn_login"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_marginTop="45dp"
+                 android:text="Log In"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:textSize="38sp"
+                 android:textColor="@color/white"
+                 android:padding="25dp"
+                 android:background="@drawable/button_curve_blue"
+                 />
+             
+             <TextView
+                 android:id="@+id/tv_create_new_account"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:gravity="center"
+                 android:layout_marginTop="55dp"
+                 android:text="@string/create_text"
+                 android:textSize="38sp"
+                 android:textColor="@color/black" />
+		             
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

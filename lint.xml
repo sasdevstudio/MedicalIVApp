@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InlinedApi">
+        <ignore path="src/com/flytesolutions/medicalivapp/ViewActivity.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/flytesolutions/medicalivapp/CurrentRoomActivity.java" />
+    </issue>
+    <issue id="ResourceAsColor" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+</lint>

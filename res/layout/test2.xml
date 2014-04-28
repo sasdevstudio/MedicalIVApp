@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentRoomActivity"
+	android:background="@color/bac_color">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp" >
+            
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="@string/welcome_text"
+                 android:textColor="@color/black"
+                 android:textSize="25dp" />
+            
+            <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:layout_marginTop="20dp"
+                 android:textColor="@color/black"
+                 android:paddingLeft="60dp"
+                 android:paddingRight="60dp"
+                 android:text="@string/login_info"
+                 android:textSize="20dp" />
+            
+            <EditText
+                 android:id="@+id/et_email"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:text="1345@gmail.com"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:textSize="20dp" 
+                 android:textColor="@color/black"/>
+            
+            <EditText
+                 android:id="@+id/et_password"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:text="we"
+                 android:textColor="@color/black"
+                 android:inputType="textPassword"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:textSize="20dp" />
+           
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.77"
+            android:orientation="vertical"
+			android:layout_marginTop="30dp">
+             
+            <Button
+                 android:id="@+id/btn_login"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:text="Log In"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:textSize="20sp"
+                 android:textColor="@color/white"
+                 android:paddingTop="15dp"
+                 android:paddingBottom="15dp"
+                 android:background="@drawable/button_curve_blue" />
+             
+             <TextView
+                 android:id="@+id/tv_create_new_account"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:layout_marginTop="60dp"
+                 android:text="@string/create_text"
+                 android:textSize="20dp"
+                 android:textColor="@color/black" />
+             
+	    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

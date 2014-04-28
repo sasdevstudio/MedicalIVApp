@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentRoomActivity"
+	android:background="@color/bac_color">
+
+     <ScrollView
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:fillViewport="true"
+		    android:scrollbars="none">
+
+	    <LinearLayout
+	        android:id="@+id/lv_bac"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.33"
+	            android:orientation="vertical" >
+	            
+	            <TextView
+	                 android:layout_width="fill_parent"
+	                 android:layout_height="wrap_content"
+	                 android:gravity="center"
+	                 android:text="The Device is for Room #:"
+	                 android:textColor="@color/black"
+	                 android:textSize="22dp" 
+	                 android:layout_marginTop="15dp"/>
+	            
+	             <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center">
+	
+	                <ViewSwitcher
+				        android:id="@+id/roomno_switcher"
+				        android:layout_width="200dp"
+				        android:layout_height="wrap_content" 
+				        android:inAnimation="@android:anim/slide_in_left"
+	   					android:outAnimation="@android:anim/slide_out_right"
+	   					android:layout_marginTop="5dp">
+				
+	                    <EditText
+		                    android:id="@+id/et_room_number"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:hint="Enter Room #"
+		                    android:textSize="18dp" 
+		                    android:textColor="@color/black"
+		                    android:selectAllOnFocus="true"/>
+				        <TextView
+				            android:id="@+id/tv_room_number"
+				            android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+				            android:text="" 
+				            android:gravity="center"
+				            android:textColor="@color/black"
+				            android:layout_gravity="right"
+				            android:textSize="25dp"/>
+				    </ViewSwitcher>
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.33"
+	            android:orientation="vertical" >
+ 
+	           <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" 
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp">
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="Rate (mL/hr):"
+		                android:gravity="center"
+		                android:textSize="18dp"
+		                android:layout_weight="0.4"
+		                android:textColor="@color/black"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		            <ViewSwitcher
+		                android:id="@+id/rate_switcher"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.6" >
+		
+		                <EditText
+		                    android:id="@+id/et_rate"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@color/black"
+		                    android:hint="Enter Rate" 
+		                    android:textSize="18dp"
+		                    android:inputType="numberDecimal">
+		                </EditText>
+		                
+		                <TextView
+			                android:id="@+id/tv_rate"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text=""
+			                android:gravity="center"
+		                    android:textColor="@color/black"
+		                    android:textSize="18dp" />
+		            </ViewSwitcher>
+		        </LinearLayout>
+		        
+	            <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" 
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:layout_marginTop="15dp">
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text=" VTBI (mL):    "
+		                android:gravity="center"
+		                android:textSize="18dp"
+		                android:layout_weight="0.4"
+		                android:textColor="@color/black"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		            <ViewSwitcher
+		                android:id="@+id/vtbi_switcher"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.6" >
+		
+		                <EditText
+		                    android:id="@+id/et_vtbi"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@color/black"
+		                    android:hint="Enter Rate" 
+		                    android:inputType="numberDecimal"
+		                    android:textSize="18dp">
+		                </EditText>
+		                
+		                <TextView
+			                android:id="@+id/tv_vtbi"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text=""
+			                android:gravity="center"
+		                    android:textColor="@color/black"
+		                    android:textSize="18dp" />
+		            </ViewSwitcher>
+		        </LinearLayout>
+	             
+	             <LinearLayout
+	                android:id="@+id/layout_timer"
+		            android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:orientation="horizontal"
+			        android:layout_marginTop="15dp">
+	
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="0.5"
+	                    android:gravity="center"
+	                    android:text="Time (hr):"
+	                    android:textColor="@color/black"
+	                    android:textSize="18dp" />
+	                
+	                <TextView
+	                    android:id="@+id/tv_timer"
+	                    android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="00:00"
+		                android:textSize="18dp" 
+		                android:layout_weight="0.5"
+		                android:gravity="center"
+		                android:textColor="@color/black"/>
+	            </LinearLayout>
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.33"
+	            android:orientation="vertical" >
+	             
+	            <LinearLayout
+	                android:id="@+id/layout_start_reset"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:padding="5dp" 
+			        android:layout_marginTop="15dp"
+			        android:layout_marginBottom="20dp"
+			        android:orientation="horizontal">
+			
+			        <Button
+			            android:id="@+id/btn_start_timer"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/button_curve_green"
+			            android:textSize="18dp"
+		                android:layout_weight="1"
+		                android:textColor="@color/black"
+			            android:gravity="center"
+			            android:text="Start" 
+			            android:paddingTop="10dp"
+		                android:paddingBottom="10dp"
+		                android:layout_marginRight="5dp"/>
+			
+			        <Button
+			            android:id="@+id/btn_pause_timer"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/button_curve_green"
+			            android:textSize="18dp"
+		                android:layout_weight="1"
+		                android:textColor="@color/black"
+			            android:gravity="center"
+			            android:text="Pause" 
+			            android:paddingTop="10dp"
+		                android:paddingBottom="10dp"
+			            android:visibility="gone"
+			            android:layout_marginRight="5dp"/>
+			
+			        <Button
+			            android:id="@+id/btn_restart_timer"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/button_curve_green"
+			            android:textSize="18dp"
+		                android:layout_weight="1"
+		                android:textColor="@color/black"
+			            android:gravity="center"
+			            android:text="Restart"
+			            android:paddingTop="10dp"
+		                android:paddingBottom="10dp"
+			            android:visibility="gone" 
+			            android:layout_marginRight="5dp"/>
+			        
+			        <Button
+			            android:id="@+id/btn_reset_timer"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:textSize="18dp"
+		                android:layout_weight="1"
+		                android:textColor="@color/black"
+			            android:gravity="center"
+			            android:background="@drawable/button_curve_red"
+			            android:text="Reset Rate/VTBI"
+			            android:paddingTop="10dp"
+		                android:paddingBottom="10dp"
+		                android:paddingLeft="5dp"
+		                android:paddingRight="5dp"
+			            android:visibility="visible" />
+			
+			     </LinearLayout>
+	        </LinearLayout>
+	    </LinearLayout>
+	</ScrollView>
+</RelativeLayout>

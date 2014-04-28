@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/bac_color">
+    
+    <LinearLayout
+         android:id="@+id/layout_view"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+         
+	     <LinearLayout
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:orientation="horizontal" 
+	         android:layout_marginTop="10dp"
+	         android:layout_marginLeft="10dp">
+		        
+		        <TextView
+			        android:id="@+id/tv_view"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Viewing Group:"
+			        android:textSize="25dp"
+			        android:layout_marginRight="5dp"
+			        android:textColor="@color/black" />
+			    
+			    <TextView
+			        android:id="@+id/tv_email_address"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="admin@StJohns.org"
+			        android:textSize="25dp"
+			        android:layout_marginRight="30dp"
+			        android:textColor="@color/black" />
+			    
+			    <Button
+			        android:id="@+id/btn_change_setting"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Change Device Setting"
+			        android:gravity="right"
+			        android:textSize="25dp"
+			        android:textColor="@color/white"
+			        android:padding="15dp"
+			        android:background="@drawable/button_curve_deepblue" />
+	    </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/layout_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="10dp"
+	    android:fillViewport="true"
+	    android:scrollbars="none">
+	    <TableLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:stretchColumns="1,0,0"
+	            android:id="@+id/maintable" >
+	    </TableLayout>
+    </ScrollView>
+</RelativeLayout>

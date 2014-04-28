@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MedicalIVApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="welcome_text">Welcome to IV Monitor</string>
+    <string name="login_info">Please log in to your group account</string>
+    <string name="create_text">Create New Group Account</string>
+	<string name="create_account_text">To create Group Account, provide an email and password</string>
+	<string name="back">&lt; Back </string>
+	
+	<string name="welcome_text2">Welcome! Here’s how this works:</string>
+	<string name="welcome_text3">One device will sit at the Nursing Station to watch all patients</string>
+	<string name="welcome_text4">The other devices will be in the rooms with each patient</string>
+	
+	<string name="create_account_login">Create Account &amp; Log In</string>
+	
+	<color name="black">#000000</color>
+    <color name="green">#77ad1b</color>
+    <color name="white">#ffffff</color>
+    <color name="ash">#2f2f2f</color>
+    <color name="red">#ff0000</color>
+    <color name="testingBlue">#0099fe</color>
+    <color name="gray">#808080</color>
+    <color name="magenta">#800080</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="maroon">#800000</color>
+    <color name="orange">#FF7F00</color>
+    <color name="bac_color">#CFE2F3</color>
+    
+    <color name="table_contains">#CCCCCC</color>
+     
+    
+    <string name="navi_text1">Where will this specific device be used?</string>
+    <string name="navi_text2">In Patients Room</string>
+    <string name="navi_text3">Will allow you to set IV for a single paitent</string>
+    <string name="navi_text4">Main Nursing Station</string>
+    <string name="navi_text5">Will allow you to monitor all IVs</string>
+    
+</resources>
